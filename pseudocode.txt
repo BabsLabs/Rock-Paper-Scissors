@@ -1,0 +1,15 @@
+Show user input buttons
+Get user input
+Hide user input buttons
+Show user and computer hands
+Calculate computer choice
+Count down 
+    Rock
+    Paper
+    Scissors
+    Shoot
+Display played hand
+Calculate winner
+    Account for ties
+Display winner message
+Ask for retry

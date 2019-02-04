@@ -1,0 +1,13 @@
+#container {
+    background-color: darkslateblue;
+    height: 100vh;
+}
+
+#buttons-container {
+    display: flex;
+    text-align: center;
+}
+
+#buttons-container label {
+    display: block;
+}
