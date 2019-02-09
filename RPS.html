@@ -20,32 +20,62 @@
         <!-- Smaller contianer to center the game -->
         <div id="game-container">
 
-            <!-- Title Container-->
-            <div id="title-container">Rock Paper Scissors Game</div>
+            <!-- Title -->
+            <div id="title-container">
+                <h1>Rock Paper Scissors Game</h1>
+            </div>
 
-            <!-- Radio Button To Get User Input -->
+            <!-- Intro Prompt -->
+            <button id="start-button">Start Game</button>
+
+            <!-- Score Chart -->
+            <div id="scores-container">
+                <div id="player-score" class="score">
+                    <h2>Player Score</h2>
+                    <p>0</p>
+                </div>
+                <div id="computer-score" class="score">
+                    <h2>Computer Score</h2>
+                    <p>0</p>
+                </div>
+            </div>
+
+            <!-- Radio Button Container used to get user input -->
             <div id="buttons-container">
-                <fieldset>
 
-                    <!-- Rock -->
-                    <div>
-                        <input type="radio" id="rock" name="rps-choice" value="rock">
-                        <label for="rock">Rock</label>
+                <div>
+                    <h2>Choose your move</h2>
+                </div>
+
+
+                <!-- Rock -->
+                <button class="button" type="rpsbutton" id="rock">
+                    <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png" alt="Rock">
+                </button>
+
+                <!-- Paper -->
+                <button class="button" type="rpsbutton" id="paper">
+                    <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Paper.png" alt="Paper">
+                </button>
+
+                <!-- Scissors -->
+                <button class="button" type="rpsbutton" id="scissors">
+                    <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Scissors.png" alt="Scissors">
+                </button>
+
+                <!-- Player vs Computer Container -->
+                <div id="pvsc-container">
+                    <div id="player-move">
+                        <h2>Player</h2>
+                        <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png" alt="Rock">
                     </div>
-
-                    <!-- Paper -->
-                    <div>
-                        <input type="radio" id="paper" name="rps-choice" value="paper">
-                        <label for="paper">Paper</label>
+                    <div id="computer-move">
+                        <h2>Computer</h2>
+                        <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png" alt="Rock">
                     </div>
+                </div>
 
-                    <!-- Scissors -->
-                    <div>
-                        <input type="radio" id="scissors" name="rps-choice" value="scissors">
-                        <label for="Scissors">Scissors</label>
-                    </div>
-
-                </fieldset>
+                <!-- End of Buttons Container -->
             </div>
 
             <!-- End of Game Container -->
@@ -54,6 +84,7 @@
         <!-- End of Main Container -->
     </div>
 
+    <script src="rps.js"></script>
 </body>
 
 </html>

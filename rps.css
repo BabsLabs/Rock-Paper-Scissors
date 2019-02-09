@@ -1,13 +1,144 @@
-#container {
-    background-color: darkslateblue;
-    height: 100vh;
+/* Import Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen: 400, 700');
+
+/* Define Variables */
+
+
+/* Start of Body styles*/
+
+body {
+    box-sizing: border-box;
+    background: cornsilk;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
 }
+
+
+/* Main Container */
+
+#container {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+/* Game Container */
+
+#game-container {
+    border: 1px dashed red;
+    text-align: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+/* Title Container */
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Intro Container */
+
+
+/* #start-button changes from inline-block to hidden when clicked */
+
+#start-button {
+    background-color: limegreen;
+    border: 2px solid black;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#start-button:hover {
+    cursor: pointer;
+}
+
+
+/* Scores Container */
+
+
+/* #scores-container changes from hidden to inline-flex on click */
+
+#scores-container {
+    display: none;
+}
+
+.score {
+    padding: 1rem;
+}
+
+.score p {
+    font-weight: 700;
+}
+
+
+/* Buttons Container */
+
+
+/* #buttons-container changes from hidden to flex when clicked */
 
 #buttons-container {
-    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
     text-align: center;
+    font-weight: 700;
+    border: 2px solid pink;
 }
 
-#buttons-container label {
-    display: block;
+
+/* Button Styles */
+
+.button {
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button img {
+    max-width: 100%;
+}
+
+
+/* Player VS Computer Container */
+
+
+/* #pvsc-container changes from none to flex when user makes their move */
+
+#pvsc-container {
+    display: none;
+    flex-direction: row;
+}
+
+#pvsc-container h2 {
+    padding: 1rem;
+}
+
+#player-move {
+    width: 50%;
+}
+
+#computer-move {
+    width: 50%;
 }
