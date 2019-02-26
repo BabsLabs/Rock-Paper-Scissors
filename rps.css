@@ -117,7 +117,14 @@ body {
 }
 
 .button img {
-    max-width: 100%;
+    max-width: 75%;
+}
+
+
+/* RPS Container */
+
+#rpsbuttons {
+    display: inline-flex;
 }
 
 
@@ -133,6 +140,15 @@ body {
 
 #pvsc-container h2 {
     padding: 1rem;
+}
+
+#pvsc-container img {
+    max-width: 75%;
+    top: 50%;
+    transition-delay: 1s;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(.0, 2.7, 0.58, 1);
 }
 
 #player-move {
