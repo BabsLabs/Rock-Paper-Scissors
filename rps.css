@@ -2,9 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oxygen: 400, 700');
 
-/* Define Variables */
-
-
 /* Start of Body styles*/
 
 body {
@@ -157,4 +154,27 @@ body {
 
 #computer-move {
     width: 50%;
+}
+
+
+/* Play Again Container */
+
+#play-again-contianer {
+    display: none;
+}
+
+#play-again-btn {
+    background-color: limegreen;
+    border: 2px solid black;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#play-again-btn:hover {
+    cursor: pointer;
 }
