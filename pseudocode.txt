@@ -7,20 +7,23 @@ Prompt user to start game
 
     Get user input
         How?
-            If the button is clicked for more than 2 seconds submit
-    
+              
     Hide user input buttons
-        Once button is clicked for more than 2 seconds hide buttons
+
     Show user and computer hands with titles
-        Create a new div for that?
-    Calculate computer choice
+
     Count down 
         Rock
         Paper
         Scissors
-        Shoot
-    Display played hand
+
+    Calculate computer choice
+
+    Display played hands
+  
     Calculate winner
         Account for ties
-    Display winner message
+  
+    Display winner message and increase score counter
+  
     Ask for retry

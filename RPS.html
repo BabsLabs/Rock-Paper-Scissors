@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
 
     <!-- Link Stylesheet -->
     <link rel="stylesheet" href="rps.css">
@@ -30,13 +30,13 @@
 
             <!-- Score Chart -->
             <div id="scores-container">
-                <div id="player-score" class="score">
+                <div class="score">
                     <h2>Player Score</h2>
-                    <p>0</p>
+                    <p id="player-score">0</p>
                 </div>
-                <div id="computer-score" class="score">
+                <div class="score">
                     <h2>Computer Score</h2>
-                    <p>0</p>
+                    <p id="computer-score">0</p>
                 </div>
             </div>
 
@@ -47,35 +47,34 @@
                     <h2>Choose your move</h2>
                 </div>
 
-
-                <!-- Rock -->
-                <button class="button" type="rpsbutton" id="rock">
+                <div id="rpsbuttons">
+                    <!-- Rock -->
+                    <button class="button" type="rpsbutton" id="rock">
                     <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png" alt="Rock">
                 </button>
 
-                <!-- Paper -->
-                <button class="button" type="rpsbutton" id="paper">
+                    <!-- Paper -->
+                    <button class="button" type="rpsbutton" id="paper">
                     <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Paper.png" alt="Paper">
                 </button>
 
-                <!-- Scissors -->
-                <button class="button" type="rpsbutton" id="scissors">
+                    <!-- Scissors -->
+                    <button class="button" type="rpsbutton" id="scissors">
                     <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Scissors.png" alt="Scissors">
                 </button>
-
-                <!-- Player vs Computer Container -->
-                <div id="pvsc-container">
-                    <div id="player-move">
-                        <h2>Player</h2>
-                        <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png" alt="Rock">
-                    </div>
-                    <div id="computer-move">
-                        <h2>Computer</h2>
-                        <img src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png" alt="Rock">
-                    </div>
                 </div>
+            </div>
 
-                <!-- End of Buttons Container -->
+            <!-- Player vs Computer Container -->
+            <div id="pvsc-container">
+                <div id="player-move">
+                    <h2>Player</h2>
+                    <img class="match-img" id="player-img" src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png" alt="Rock">
+                </div>
+                <div id="computer-move">
+                    <h2>Computer</h2>
+                    <img class="match-img" id="comp-img" src="https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png" alt="Rock">
+                </div>
             </div>
 
             <!-- End of Game Container -->
