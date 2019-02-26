@@ -29,7 +29,6 @@ body {
 /* Game Container */
 
 #game-container {
-    border: 1px dashed red;
     text-align: center;
     max-width: 90%;
     max-height: 90%;
@@ -95,10 +94,8 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     text-align: center;
     font-weight: 700;
-    border: 2px solid pink;
 }
 
 

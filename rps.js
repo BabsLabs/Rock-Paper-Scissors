@@ -91,7 +91,6 @@ function getCompChoice() {
         compChoice = 'scissors';
         compImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Scissors.png';
     }
-    console.log(playerChoice + " " + compChoice);
 };
 
 // Check the player choice vs the comp choice
@@ -124,7 +123,6 @@ function checkMatch() {
     }
 
     // Print Scores, rounds, ties, and increment round
-    console.log(playerScore + " " + compScore);
     prntPlayerScore.innerHTML = playerScore;
     prntCompScore.innerHTML = compScore;
     round++;
