@@ -11,10 +11,16 @@ let compImg = document.getElementById('comp-img');
 const matchImg = document.getElementsByClassName('match-img');
 let prntPlayerScore = document.getElementById('player-score');
 let prntCompScore = document.getElementById('computer-score');
+let prntRound = document.getElementById('round');
+let prntTies = document.getElementById('ties');
+let replayBox = document.getElementById('play-again-contianer');
+const retryBtn = document.getElementById("play-again-btn");
 
-// Score variables
+// Score and round variables
 playerScore = 0;
 compScore = 0;
+round = 0;
+ties = 0;
 
 // Start game function
 start.addEventListener('click', function() {
@@ -24,9 +30,11 @@ start.addEventListener('click', function() {
     scoreBox.style.display = 'inline-flex';
     // shows user choice buttons
     btns.style.display = 'inline';
-    // reset scores
+    // reset scores and round as a backup
     playerScore = 0;
     compScore = 0;
+    ties = 0;
+    round - 0;
 })
 
 // Functions to listen for the player choice
@@ -57,7 +65,7 @@ btns.addEventListener('click', () => {
     checkMatch();
 });
 
-// Function to hide buttons and show match
+// Function to hide rock paper scissors input buttons and show player vs comp match
 function btnHider() {
     btns.style.display = 'none';
     match.style.display = 'flex';
@@ -65,6 +73,7 @@ function btnHider() {
 
 
 // Calculate computer choice
+// Computer Choice variable
 let compChoice;
 
 // Computer choice function
@@ -87,14 +96,12 @@ function getCompChoice() {
 
 // Check the player choice vs the comp choice
 
-// Delay the Alert window
-
-
 // Function to check game result
 function checkMatch() {
     // Check for tie game
     if (playerChoice == compChoice) {
         alert('Tie Game!');
+        ties++;
         // Check for player or computer win options 
     } else if (playerChoice == 'rock' && compChoice == 'scissors') {
         alert('Player Wins!');
@@ -116,7 +123,27 @@ function checkMatch() {
         compScore++;
     }
 
+    // Print Scores, rounds, ties, and increment round
     console.log(playerScore + " " + compScore);
     prntPlayerScore.innerHTML = playerScore;
     prntCompScore.innerHTML = compScore;
+    round++;
+    prntRound.innerHTML = round;
+    prntTies.innerHTML = ties;
+
+    // Show Replay button
+    retryBtnDisplay();
 };
+
+// Function to show retry button 
+function retryBtnDisplay() {
+    replayBox.style.display = 'inline';
+}
+
+// Replay button event listeners and functions
+retryBtn.addEventListener('click', function() {
+    // Hide Player vs Computer Container and shows user choice buttons
+    btns.style.display = 'inline';
+    match.style.display = 'none';
+    replayBox.style.display = 'none';
+});
