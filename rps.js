@@ -99,26 +99,19 @@ function getCompChoice() {
 function checkMatch() {
     // Check for tie game
     if (playerChoice == compChoice) {
-        alert('Tie Game!');
         ties++;
         // Check for player or computer win options 
     } else if (playerChoice == 'rock' && compChoice == 'scissors') {
-        alert('Player Wins!');
         playerScore++;
     } else if (playerChoice == 'paper' && compChoice == 'scissors') {
-        alert('Computer Wins!');
         compScore++;
     } else if (playerChoice == 'scissors' && compChoice == 'rock') {
-        alert('Computer Wins!');
         compScore++;
     } else if (playerChoice == 'paper' && compChoice == 'rock') {
-        alert('Player Wins!');
         playerScore++;
     } else if (playerChoice == 'scissors' && compChoice == 'paper') {
-        alert('Player Wins!');
         playerScore++;
     } else if (playerChoice == 'rock' && compChoice == 'paper') {
-        alert('Computer Wins!');
         compScore++;
     }
 
