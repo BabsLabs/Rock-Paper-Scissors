@@ -45,17 +45,17 @@ let playerChoice;
 // RPS Button event listeners
 rock.addEventListener('click', () => {
     playerChoice = 'rock';
-    playerImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png';
+    playerImg.src = 'img/Rock.png';
 });
 
 paper.addEventListener('click', () => {
     playerChoice = 'paper';
-    playerImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Paper.png';
+    playerImg.src = 'img/Rock.png';
 });
 
 scissors.addEventListener('click', () => {
     playerChoice = 'scissors';
-    playerImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Scissors.png';
+    playerImg.src = 'img/Scissors.png';
 });
 
 // Start match vs computer upon player choice
@@ -83,13 +83,13 @@ function getCompChoice() {
     // Assigns the random numer to a string for later camparison with the player choice
     if (compChoice == 0) {
         compChoice = 'rock';
-        compImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Rock.png';
+        compImg.src = 'img/Rock.png';
     } else if (compChoice == 1) {
         compChoice = 'paper';
-        compImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Paper.png';
+        compImg.src = 'img/Paper.png';
     } else if (compChoice == 2) {
         compChoice = 'scissors';
-        compImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/Scissors.png';
+        compImg.src = 'img/Scissors.png';
     }
 };
 
@@ -100,7 +100,7 @@ function checkMatch() {
     // Check for tie game
     if (playerChoice == compChoice) {
         ties++;
-        // Check for player or computer win options 
+        // Check for player or computer win options
     } else if (playerChoice == 'rock' && compChoice == 'scissors') {
         playerScore++;
     } else if (playerChoice == 'paper' && compChoice == 'scissors') {
@@ -126,7 +126,7 @@ function checkMatch() {
     retryBtnDisplay();
 };
 
-// Function to show retry button 
+// Function to show retry button
 function retryBtnDisplay() {
     replayBox.style.display = 'inline';
 }
