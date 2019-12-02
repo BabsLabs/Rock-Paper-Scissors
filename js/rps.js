@@ -45,17 +45,17 @@ let playerChoice;
 // RPS Button event listeners
 rock.addEventListener('click', () => {
     playerChoice = 'rock';
-    playerImg.src = 'img/Rock.png';
+    playerImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/img/Rock.png';
 });
 
 paper.addEventListener('click', () => {
     playerChoice = 'paper';
-    playerImg.src = 'img/Rock.png';
+    playerImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/img/Paper.png';
 });
 
 scissors.addEventListener('click', () => {
     playerChoice = 'scissors';
-    playerImg.src = 'img/Scissors.png';
+    playerImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/img/Scissors.png';
 });
 
 // Start match vs computer upon player choice
@@ -83,13 +83,13 @@ function getCompChoice() {
     // Assigns the random numer to a string for later camparison with the player choice
     if (compChoice == 0) {
         compChoice = 'rock';
-        compImg.src = 'img/Rock.png';
+        compImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/img/Rock.png';
     } else if (compChoice == 1) {
         compChoice = 'paper';
-        compImg.src = 'img/Paper.png';
+        compImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/img/Paper.png';
     } else if (compChoice == 2) {
         compChoice = 'scissors';
-        compImg.src = 'img/Scissors.png';
+        compImg.src = 'https://raw.githubusercontent.com/BabsLabs/Rock-Paper-Scissors/master/img/Scissors.png';
     }
 };
 
