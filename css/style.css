@@ -121,6 +121,10 @@ body {
     display: inline-flex;
 }
 
+#rpsbuttons img {
+    max-width: 50%;
+}
+
 
 /* Player VS Computer Container */
 
@@ -137,7 +141,7 @@ body {
 }
 
 #pvsc-container img {
-    max-width: 75%;
+    max-width: 50%;
     top: 50%;
     transition-delay: 1s;
     transform-origin: 100%;
